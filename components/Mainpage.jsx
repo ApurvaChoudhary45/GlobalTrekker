@@ -168,7 +168,7 @@ const Mainpage = () => {
         <div className='relative z-50'>
           <nav className='md:flex md:justify-between md:items-center md:px-40 py-5 backdrop:blur-2xl flex justify-between items-center px-5'>
             <h1 className='md:text-3xl font-mono font-extralight text-white text-2xl'>GlobeTrekker</h1>
-            <button className='text-xl border-2 md:p-2 p-1 rounded-2xl text-white hover:bg-amber-200 hover:text-black font-mono transition-all duration-500 cursor-pointer' onClick={() => signOut()}>Log Out</button>
+            <button className='text-sm p-2 border-2 md:p-2 rounded-2xl text-white hover:bg-amber-200 hover:text-black font-mono transition-all duration-500 cursor-pointer' onClick={() => signOut()}>Log Out</button>
           </nav>
         </div>
         <div className='relative z-50 w-full max-w-2xl mx-auto text-center mt-10 px-4 '>

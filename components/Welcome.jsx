@@ -23,7 +23,7 @@ const Welcome = () => {
                 <div className='flex justify-center items-center flex-col gap-10 py-40'>
                     <h1 className='md:text-7xl text-4xl font-mono font-extrabold md:bg-gradient-to-r from-white to-yellow-400 bg-clip-text md:text-transparent text-amber-500'>GlobeTrekker</h1>
                     <p className='md:text-5xl text-2xl text-white text-center'>Discover the World, Live and Updated.</p>
-                    <button className='border-1 text-white p-3 text-2xl rounded-4xl cursor-pointer hover:bg-amber-200 hover:text-black font-mono transition-all duration-500'  onClick={() => signIn()}>Explore the World</button>
+                    <button className='border-1 text-white p-3 text-2xl rounded-4xl cursor-pointer hover:bg-amber-200 hover:text-black font-mono transition-all duration-500 md:mt-10 mt-20'  onClick={() => signIn()}>Explore the World</button>
                 </div>
             </div>
         </div>
