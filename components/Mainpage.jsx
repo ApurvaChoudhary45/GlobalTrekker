@@ -108,6 +108,11 @@ const Mainpage = () => {
     dispatch(searchCountry(find))
     setfind('')
   }
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      searching();
+    }
+  };
 
   const handleMapClick = async ({ lat, lng }) => {
     try {
@@ -178,6 +183,7 @@ const Mainpage = () => {
             placeholder="Enter country name..."
             value={find}
             onChange={(e) => setfind(e.target.value)}
+            onKeyDown={handleKeyDown}
             className="w-full px-5 py-3 rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-400 transition-all duration-300 font-mono"
 
           />
