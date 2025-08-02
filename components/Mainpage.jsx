@@ -209,12 +209,12 @@ const Mainpage = () => {
             <aside className="w-full md:w-1/4 bg-[#f0f9ff] text-[#0f172a] p-6 rounded-3xl shadow-xl hover:bg-[#b3daf5] transition duration-500 relative z-50">
               <img src="https://images.pexels.com/photos/12762122/pexels-photo-12762122.jpeg" alt="" className='absolute inset-0 w-full h-full rounded-3xl' />
               <div className='relative z-50'>
-                <h2 className="text-2xl font-semibold text-sky-700 mb-6 font-mono">⛅ Weather Info</h2>
-                <div className="space-y-4 text-base font-medium">
-                  <div><span className="font-semibold text-white text-lg font-mono">Location:</span> {weather?.location?.country}</div>
-                  <div><span className="font-semibold text-white text-lg font-mono">Capital:</span> {weather?.location?.name}</div>
-                  <div><span className="font-semibold text-white text-lg font-mono">Temperature:</span> {weather?.current?.temp_c}°C</div>
-                  <div><span className="font-semibold text-white text-lg font-mono">Condition:</span> {weather?.current?.condition?.text}</div>
+                <h2 className="text-2xl font-semibold text-white   mb-6 font-mono">⛅ Weather Info</h2>
+                <div className="space-y-4 text-base font-medium text-white">
+                  <div><span className="font-semibold text-black text-lg font-mono">Location:</span> {weather?.location?.country}</div>
+                  <div><span className="font-semibold text-black text-lg font-mono">Capital:</span> {weather?.location?.name}</div>
+                  <div><span className="font-semibold text-black text-lg font-mono">Temperature:</span> {weather?.current?.temp_c}°C</div>
+                  <div><span className="font-semibold text-black text-lg font-mono">Condition:</span> {weather?.current?.condition?.text}</div>
                   <div className="pt-4">
                     <img src={weather?.current?.condition?.icon} alt="weather icon" className="w-20 h-20" />
                   </div>
